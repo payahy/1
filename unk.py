@@ -62,9 +62,9 @@ ki2MID = ki2.profile.mid
 ki3MID = ki3.profile.mid
 ki4MID = ki4.profile.mid
 Bots = [unkMID,aisMID,ki2MID,ki3MID,ki4MID]
-creator = ["ud827b95f8468c46e30cf9bf5dd35e8e7"]
-Owner = ["ud827b95f8468c46e30cf9bf5dd35e8e7"]
-admin = ["ud827b95f8468c46e30cf9bf5dd35e8e7"]
+creator = ["ube187443474747c3ec352e7efeb48c1b"]
+Owner = ["ube187443474747c3ec352e7efeb48c1b"]
+admin = ["ube187443474747c3ec352e7efeb48c1b"]
 
 unkProfile = unk.getProfile()
 aisProfile = ais.getProfile()
@@ -361,13 +361,13 @@ def lineBot(op):
                 elif text.lower() == 'about':
                     try:
                         arr = []
-                        owner = "ud827b95f8468c46e30cf9bf5dd35e8e7"
+                        owner = "ube187443474747c3ec352e7efeb48c1b"
                         creator = unk.getContact(owner)
                         contact = unk.getContact(unkMID)
                         grouplist = unk.getGroupIdsJoined()
                         contactlist = unk.getAllContactIds()
                         blockedlist = unk.getBlockedContactIds()
-                        ret_ = "╭════════回════════╮\n           ㊛ѕнιη¢αη°ᴛᴇᴀᴍ㊛  \n╰════════回════════╯\n╭════════回════════╮"
+                        ret_ = "╭════════回════════╮\n           About  \n╰════════回════════╯\n╭════════回════════╮"
                         ret_ += "\n╠ akun : {}".format(contact.displayName)
                         ret_ += "\n╠ group : {}".format(str(len(grouplist)))
                         ret_ += "\n╠ teman : {}".format(str(len(contactlist)))
@@ -375,7 +375,7 @@ def lineBot(op):
                         ret_ += "\n╠══[ About Selfbot ]"
                         ret_ += "\n╠ Version : Premium"
                         ret_ += "\n╠ Creator : {}".format(creator.displayName)
-                        ret_ += "\n╰════════回════════╯\n              ㊛ѕнιη¢αη°ᴛᴇᴀᴍ㊛\n╭════════回════════╮\n╰════════回════════╯"
+                        ret_ += "\n╰════════回════════╯\n              Terima Kasih\n╭════════回════════╮\n╰════════回════════╯"
                         unk.sendMessage(to, str(ret_))
                     except Exception as e:
                         unk.sendMessage(msg.to, str(e))
@@ -512,10 +512,10 @@ def lineBot(op):
                             unk.sendMessage(msg.to,"The Adminlist is empty")
                         else:
                             unk.sendMessage(msg.to,"Tunggu...")
-                            mc = "╔═══════════════\n╠㊛ѕнιη¢αη°ᴛᴇᴀᴍ㊛\n╠══☯〘 Admin List 〙☯═══\n"
+                            mc = "╔═══════════════\n╠Hello\n╠══☯〘 Admin List 〙☯═══\n"
                             for mi_d in admin:
                                 mc += "╠☯ " +unk.getContact(mi_d).displayName + "\n"
-                            unk.sendMessage(msg.to,mc + "╠═══════════════\n╠☯〘 line.me/ti/p/~unk87 〙\n╚═══════════════")
+                            unk.sendMessage(msg.to,mc + "╠═══════════════\n╠☯〘 line.me/ti/p/~situ.sehat〙\n╚═══════════════")
 #-------------------------------------------------------------------------------
                 elif text.lower() == 'protect on':
                         if settings["protect"] == True:
@@ -1007,7 +1007,6 @@ def lineBot(op):
                         ki4.sendMessage(msg.to," Jangan Jadi Penjahat yah kakak Agar Tak Masuk Blacklist ku")
                         
                 elif text.lower() == 'absen':
-                        unk.sendMessage(msg.to," Bot1 On")
                         ais.sendMessage(msg.to," Bot2 On")
                         ki2.sendMessage(msg.to," Bot3 On")
                         ki3.sendMessage(msg.to," Bot4 On")
